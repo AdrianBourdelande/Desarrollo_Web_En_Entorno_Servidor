@@ -45,7 +45,7 @@ Muestre las dos tiradas y me diga cual tiene mayor puntuación(sumando las tirad
 
         echo"Ahora hacemos el ejercicio usando las imágenes de los dados par ahacerlo más atractivo";        
     
-        
+        //Le ponemos otros dados al segundo jugador para que sea más variado gráficamente
         echo"
         <div id='tablero'>
             <div id='J1'>
@@ -81,10 +81,7 @@ Muestre las dos tiradas y me diga cual tiene mayor puntuación(sumando las tirad
             <div id='resultado'>
                 <h1>Empate!</h1>
             </div>";
-        }
-
-        
+        }        
     ?>
-    <img src="" alt="">
 </body>
 </html>
