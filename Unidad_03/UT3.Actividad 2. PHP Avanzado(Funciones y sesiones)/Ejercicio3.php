@@ -7,13 +7,15 @@
 </head>
 <body>
     <h3>Realizar un contador de visitas con sesiones. Cada vez que entre en la pagina que me 
-        cuente una visita. Mostrarlo de alguna manera.</h3>
-        
-    
+        cuente una visita. Mostrarlo de alguna manera.</h3>    
     <?php 
-        session_start();       
-        $_SESSION["contador"]++;
-        echo "Veces que se ha visitado la página <h3>".$_SESSION["contador"]."</h3>";       
+        session_start(); 
+        if(isset($_SESSION["contador"])){
+            $_SESSION["contador"]++;
+        }else{
+            $_SESSION["contador"]=0;
+        }        
+        echo "Veces que se ha visitado la página <b>".$_SESSION["contador"]."</b>";       
     ?>
 
 </body>
