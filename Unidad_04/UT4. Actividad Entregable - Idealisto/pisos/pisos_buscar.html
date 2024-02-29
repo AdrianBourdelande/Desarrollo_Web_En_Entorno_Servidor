@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idealisto Pisos</title>
+</head>
+<body>
+    <a href="../index.php">Inicio</a>
+    <form action="pisos_buscar.php">
+        <label for="filtro">Buscar por</label>
+        <select name="filtro" id="filtro">
+            <option value="Codigo_piso">Codigo Piso</option>
+            <option value="calle">Calle</option>
+            <option value="numero">Numero</option>
+            <option value="piso">Piso</option>
+            <option value="puerta">Puerta</option>
+            <option value="cp">Codigo Postal</option>
+            <option value="metros">Metros Cuadrados</option>
+            <option value="zona">Zona</option>
+            <option value="precio">Precio</option>
+            <option value="usuario_id">ID de Usuario</option>
+        </select>       
+        <input type="text" id="filtroTexto" name="filtroTexto">
+        <button type="submit">Buscar</button>
+    </form>
+</body>
+</html>

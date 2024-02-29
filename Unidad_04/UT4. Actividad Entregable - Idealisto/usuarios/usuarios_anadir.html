@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idealisto Pisos</title>
+</head>
+<body>
+    <a href="../index.php">Inicio</a>
+    <form action="usuarios_anadir.php">
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" id="nombre"><br>
+        <label for="apellidos">Apellidos</label>
+        <input type="text" name="apellidos" id="apellidos"><br>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email"><br>
+        <select name="tipo_usuario" id="tipo_usuario">
+            <option value="comprador">Comprador</option>
+            <option value="vendedor">Vendedor</option>
+        </select>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password"><br>
+        <button type="submit">Añadir</button>
+    </form>
+</body>
+</html>
